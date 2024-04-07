@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Change font for all text except the title */
     margin: 0;
     padding: 0;
     background-color: #f8f0f5;
@@ -19,6 +19,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif; /* Change font for the title */
 }
 
 /* Logo Styles */
@@ -78,13 +79,14 @@ nav ul li a:hover {
 .hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; /* Change font for the title */
 }
 
 .hero p {
     font-size: 1.5em;
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Change font for the content */
 }
-
 
 /* Page Content Styles */
 .content {
@@ -98,10 +100,12 @@ nav ul li a:hover {
 .content h2 {
     margin-top: 0;
     color: #ff66b3;
+    font-family: 'Montserrat', sans-serif; /* Change font for the headings */
 }
 
 .content p {
     line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Change font for the content */
 }
 
 /* Footer Styles */
@@ -117,6 +121,7 @@ footer {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
 
 .fadeIn {
     animation: fadeIn 1s ease-in-out;
@@ -159,4 +164,15 @@ footer {
         top: 10px;
         left: 10px;
     }
+}
+
+#darkModeToggle {
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
